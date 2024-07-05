@@ -23,11 +23,13 @@ export const FAQ = () => {
   return (
     <>
       <Header />
-      <main className="py-10">
-        <h1 className="flex justify-center  font-bold text-2xl w-full text-sky-blue-200 ">Perguntas Mais Frequentes</h1>
-        {faq.map(e => <FaqComponents pergunta={e.pergunta} resposta={e.resposta} />)}
-        
-
+      <main>
+        <div  className="mt-28">
+          <h1 className="flex justify-center font-bold text-2xl w-full text-sky-blue-200 ">Perguntas Mais Frequentes</h1>
+          <div className="px-[250px]  mt-16 ">    
+          {faq.map(e => <FaqComponents className="flex justify-center " pergunta={e.pergunta} resposta={e.resposta} />)}
+        </div>
+        </div>
       </main>
     </>
   );
