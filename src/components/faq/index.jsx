@@ -12,12 +12,14 @@ export const FaqComponents = () => {
         >
           <span> Como faço para criar uma conta? </span>
           <span>{aberto ? "-" : "+"}</span>
-        </button>                                                                                                      
+        </button>   
 
-        <div>
-          <div>Geralmente, há um botão "Registrar" ou "Criar Conta" na página inicial. Você precisará fornecer seu nome, endereço de e-mail e criar uma senha.</div>
+        <div
+          className={`overflow-hidden transition-all duration-300 ease-in-out ${aberto ? "max-h-full opacity-100 transform translate-y-0" : "max-h-0 opacity-0 transform -translate-y-full"}`}
+        >
+          <div className="bg-sky-blue-100 p-4">Geralmente, há um botão "Registrar" ou "Criar Conta" na página inicial. Você precisará fornecer seu nome, endereço de e-mail e criar uma senha.</div>
         </div>
-      </div>
+      
     </>
   );
 };
