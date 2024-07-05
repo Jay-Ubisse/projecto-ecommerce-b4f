@@ -1,5 +1,5 @@
 import { Header } from "../components/header";
-import { FaqComponent } from "../components/faq";
+import { FaqComponents } from "../components/faq/index";
 
 export const FAQ = () => {
   const faq = [
@@ -24,7 +24,7 @@ export const FAQ = () => {
     <>
       <Header />
       <main>
-        {faq.map(e => <FaqComponent pergunta={e.pergunta} resposta={e.resposta} />)}
+        {faq.map(e => <FaqComponents pergunta={e.pergunta} resposta={e.resposta} />)}
         
 
       </main>
