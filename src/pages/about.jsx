@@ -5,7 +5,9 @@ export const About = () => {
     <>
       <Header />
       <main>
-        <p>Página Sobre</p>
+        <section>
+
+        </section>
       </main>
     </>
   );
