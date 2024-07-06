@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <>
       <Header />
-      <main  className="px-10">
+      <main  className="px-10 mt-8">
 
 <div style={{ width: '100%', height: 'auto' }}>
           <img src="public\2149241406.jpg" alt="" style={{ width: '100%', height: 'auto', borderRadius:"0 0 80px 80px"}} />
@@ -27,7 +27,7 @@ export const About = () => {
   
 
       
-      <div className="bg-cream-100  w-auto">
+      <div className="bg-cream-100  pt-12">
      
 
       <div className="text-center">
