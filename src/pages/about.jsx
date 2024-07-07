@@ -40,20 +40,16 @@ export const About = () => {
       </div>
  
 
-
-      /*  simao/*
-
-      <div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+      <div className="mt-20">
+        <div className="grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <img src="/2151238284.jpg" alt=""  className=" rounded-tl-2xl rounded-bl-2xl" />
+          <img src="/front-view-black-woman-posing-outdoors.jpg" alt="" />
+          <img src="/portrait-young-handsome-male.jpg" className="rounded-tr-2xl rounded-br-2xl" alt="" />
         </div>
       </div>
-/*  simao/*
 
 
-      <div className="flex text-justify gap-12 px-10 mb-14" >
+      <div className="flex text-justify gap-12 px-10 mb-14 mt-20" >
         <div className="w-1/2">
           <h3 className="font-bold mb-6" >A Nossa Comunidade</h3>
           <p>Não somos apenas uma loja; Somos uma equipe que compartilha uma paixão pela moda. Em nossa página, você encontrará dicas de estilo e inspirações de looks. Junte-se a nós e faça parte dessa jornada de autoexpressão e empoderamento.</p>
