@@ -30,12 +30,11 @@ export const FAQ = () => {
           {faq.map(e => <FaqComponents className="flex justify-center " pergunta={e.pergunta} resposta={e.resposta} />)}
         </div>
         </div>
-        <div className="flex justify-center items-center  relative  rad max-w-full h-80 mt-28 ">
-          <img src="https://blogdodia.com.br/wp-content/uploads/2018/03/courier-signing-document-H6YTX37-min-1-1568x1046.jpg" alt="" className="w-96 rounded-lg"  />
-        <img src="https://www.completecontroller.com/wp-content/uploads/Business-During-the-Summer-Complete-Controller.jpg" alt=""  className="w-96 rounded-md ml-4" />
-      <img src="https://th.bing.com/th/id/R.9afdfb0eb36bcadb8f485875dcb9d718?rik=NlnJ37SL7NokzA&pid=ImgRaw&r=0" alt="" className="w-96 rounded-md ml-4" />
+        <div className="flex justify-center items-center  relative  rad max-w-full h-80 mt-4 ">
+          <img src="https://blogdodia.com.br/wp-content/uploads/2018/03/courier-signing-document-H6YTX37-min-1-1568x1046.jpg" alt="Imagem 1" className="w-80 rounded-lg"  />
+        <img src="https://www.completecontroller.com/wp-content/uploads/Business-During-the-Summer-Complete-Controller.jpg" alt="Imagem 2"  className="w-80 rounded-md ml-4" />
+      <img src="https://th.bing.com/th/id/R.9afdfb0eb36bcadb8f485875dcb9d718?rik=NlnJ37SL7NokzA&pid=ImgRaw&r=0" alt="Imagem 3" className="w-80 rounded-md ml-4" />
       </div>
-        <div ><a hre><img src="" alt="" /></a></div>
       </main>
       
     </>
