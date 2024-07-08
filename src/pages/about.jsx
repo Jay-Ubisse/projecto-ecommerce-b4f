@@ -15,9 +15,9 @@ export const About = () => {
 
   
 
-      <div className="flex flex-col gap-6 text-justify my-4 md:flex-row mt-20">
+      <div className="flex flex-col gap-6  my-4 md:flex-row mt-20">
         <div>
-        <h1 className="font-bold text-2xl justify-between m-4">O seu destino de moda onde a elegância encontra a modernidade</h1>
+        <h1 className="font-bold text-2xl m-4">O seu destino de moda onde a elegância encontra a modernidade</h1>
         </div>
         <div className="text-justify ">
         <p >Na Kuxonga, somos apaixonados por proporcionar  uma experiência de compra única. Nosso compromisso vai além das peças de roupa que oferecemos; queremos inspirar confiança e expressão pessoal por meio da moda. Desde roupas casuais até looks sofisticados, nossa coleção é cuidadosamente curada para atender aos diversos estilos e ocasiões.</p>
