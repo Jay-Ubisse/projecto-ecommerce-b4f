@@ -32,7 +32,7 @@ export const About = () => {
 
       <div className="text-center">
         <h1 className="font-bold text-2xl m-4">O Nosso Compromisso</h1>
-        <div className="text-justify px-96">
+        <div className="text-justify px-4 lg:px-96 ">
           <p > Na KuXonga, acreditamos na moda que é acessível, sustentável e atemporal. Comprometemo-nos a trazer peças de qualidade que não apenas seguem as últimas tendências, mas também resistem ao teste do tempo. Trabalhamos incessantemente para garantir que cada peça reflete o padrão de excelência que você merece.</p> 
        </div>
       </div>
