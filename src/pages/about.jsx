@@ -7,7 +7,7 @@ export const About = () => {
       <main  className="px-10 mt-8">
 
 <div className="w-full h-auto relative">
-          <img src="public\2149241406.jpg" alt="" className="w-full h-auto rounded-b-3xl" />
+          <img src="/2149241406.jpg" alt="" className="w-full h-auto rounded-b-3xl" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white ">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold" >Sobre Nós</h1>
           </div>
