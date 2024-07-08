@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Circle, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 
 export const Slider = () => {
   const slides = [
     {
-      url: "https://th.bing.com/th/id/R.3583678df9a2c04a778a1ddb33880795?rik=uUYcLxmfgtLH9Q&pid=ImgRaw&r=0",
+      src: "./assets/slides/slide-1.jpg",
+      text: "Descubra as últimas tendências e renove seu guarda-roupa com estilo!",
     },
     {
-      url: "https://th.bing.com/th/id/R.d28c579c9d7b1e34a694c91813a23df9?rik=bKEImCeLgYyacg&pid=ImgRaw&r=0",
+      src: "./assets/slides/slide-2.jpg",
+      text: "Está na hora de renovar seu guarda-roupa com estilo e economia! ",
     },
     {
-      url: "https://storage.googleapis.com/eu.artifacts.grp-serv-digi-prod-pepafr-twp.appspot.com/pep-africa/uploads/assets/yhpe0763-wk-39-paid-mediababy-basics-desktop-ad-1300x500-114452d0.jpg",
-    },
-
-    {
-      url: "https://th.bing.com/th/id/R.44fa5e8764e9ad572c87989694bb8a5f?rik=BwIx2HOh%2b%2bTVpg&pid=ImgRaw&r=0",
+      src: "./assets/slides/slide-3.jpg",
+      text: "É hora de renovar o guarda-roupa dos pequenos com peças lindas e confortáveis!",
     },
     {
-      url: "https://th.bing.com/th/id/R.1582be07b7b7830f1c3c1b5d2177a4a6?rik=IN2%2bozizzpFkMw&pid=ImgRaw&r=0",
+      src: "./assets/slides/slide-4.jpg",
+      text: "Chegou a hora de renovar seu estoque de calçados com estilo e conforto!",
     },
   ];
 
@@ -39,18 +39,30 @@ export const Slider = () => {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
   return (
     <div className="max-w-[1400px] h-[780px] w-full m-auto py-12 px-2 relative group">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-      ></div>
+        style={{ backgroundImage: `url(${slides[currentIndex].src})` }}
+        className="w-full h-full rounded-2xl bg-center bg-cover duration-500 relative"
+      >
+        <div className="absolute left-0 top-0 bottom-0 bg-sky-blue-200 bg-opacity-50 text-cream-100 font-bold text-lg p-4 w-[300px] text-center flex items-center justify-center">
+          {slides[currentIndex].text}
+        </div>
+      </div>
 
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-sky-blue-200 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-sky-blue-200 text-cream-100 cursor-pointer">
         <ArrowLeft onClick={prevSlide} size={32} />
       </div>
 
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-sky-blue-200 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-sky-blue-200 text-cream-100 cursor-pointer">
         <ArrowRight onClick={nextSlide} size={32} />
       </div>
       <div className="flex top-4 justify-center py-2">
@@ -58,7 +70,9 @@ export const Slider = () => {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            className={`text-2xl cursor-pointer ${
+              currentIndex === slideIndex ? "text-blue-600" : "text-gray-400"
+            }`}
           >
             <Circle size={16} />
           </div>
