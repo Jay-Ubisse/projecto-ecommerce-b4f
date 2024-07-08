@@ -23,7 +23,7 @@ export const ProdutosMaisVendidosdaSemana = () => {
             src="https://i.ytimg.com/vi/3XNZtosuYXY/maxresdefault.jpg"
             style={{width: "90%", height: "100%", right: "20%", objectFit: "cover" }} alt="Imagem 2"
           />
-           <div style={{ position: "absolute", top: "50%", left: "73%", transform: "translate(-50%, -50%)" }}>
+           <div style={{ position: "absolute", top: "50%", left: "73%", transform: "translate(-50%, -50%)"}}>
             <h3 className="text-white text-6xl">Primavera</h3>
           </div>
         </div>
