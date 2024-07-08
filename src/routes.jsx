@@ -5,6 +5,7 @@ import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { FAQ } from "./pages/faq";
 
+
 export const route = createBrowserRouter([
   {
     path: "/",
@@ -26,4 +27,8 @@ export const route = createBrowserRouter([
     path: "faq",
     element: <FAQ />,
   },
+  {
+    path: "produtosMaisVendidosdaSemana",
+    element: <produtosMaisVendidosdaSemana/>
+  }
 ]);
