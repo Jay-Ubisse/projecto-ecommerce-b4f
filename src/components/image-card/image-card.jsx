@@ -1,12 +1,21 @@
-export const ImageCard =({title,})=>{
-    return(
-        <div className="card">
-      <img src={"https://media.licdn.com/dms/image/D4D05AQFqxpelsf2hNQ/videocover-low/0/1687098200400?e=2147483647&v=beta&t=rDrjZrQM41FLHUyyRtPNjnW35vBLOz3lIrDNHya57hM"} alt = "bebe azul" className="rounded-2xl w-20% h-20% mx-auto  bg-center p-2" />
-      <div className="card-body">
-        <h3 className=""></h3>
-        <p className="text-center">Anuncie aqui</p>
-       
+export const ImageCard = ({ title }) => {
+  return (
+    <div className="max-w-[600px] mx-auto my-8 rounded-xl overflow-hidden shadow-lg">
+      <div className="relative">
+        <img
+          src="https://img.freepik.com/premium-vector/3d-megaphone-speaker-icon-colored-vector-megaphone-icon_1120327-5.jpg"
+          alt="anuncio"
+          className="w-full"
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white p-4">
+          <div className="text-center">
+            <h2 className="text-lg font-bold mb-2">
+              Se você viu, o seu cliente também pode ver
+            </h2>
+            <p>Anuncie aqui</p>
+          </div>
+        </div>
       </div>
     </div>
-    );
+  );
 };
