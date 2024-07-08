@@ -19,7 +19,7 @@ export const About = () => {
         <div>
         <h1 className="font-bold text-2xl justify-between m-4">O seu destino de moda onde a elegância encontra a modernidade</h1>
         </div>
-        <div >
+        <div className="text-justify px-4 lg:px-96 ">
         <p >Na Kuxonga, somos apaixonados por proporcionar  uma experiência de compra única. Nosso compromisso vai além das peças de roupa que oferecemos; queremos inspirar confiança e expressão pessoal por meio da moda. Desde roupas casuais até looks sofisticados, nossa coleção é cuidadosamente curada para atender aos diversos estilos e ocasiões.</p>
         <p >Nossa coleção é um reflexo da nossa dedicação em atender a diversos estilos e ocasiões. Das roupas casuais que abraçam a simplicidade à elegância sofisticada que destaca a singularidade, cada peça é cuidadosamente selecionada para enriquecer a jornada da moda de nossos clientes.</p>
         </div>
@@ -32,7 +32,7 @@ export const About = () => {
 
       <div className="text-center">
         <h1 className="font-bold text-2xl m-4">O Nosso Compromisso</h1>
-        <div className="text-justify px-96">
+        <div className="text-justify px-4 lg:px-96 ">
           <p > Na KuXonga, acreditamos na moda que é acessível, sustentável e atemporal. Comprometemo-nos a trazer peças de qualidade que não apenas seguem as últimas tendências, mas também resistem ao teste do tempo. Trabalhamos incessantemente para garantir que cada peça reflete o padrão de excelência que você merece.</p> 
        </div>
       </div>
