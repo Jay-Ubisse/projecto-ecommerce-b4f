@@ -32,7 +32,8 @@ export const About = () => {
 
       <div className="text-center">
         <h1 className="font-bold text-2xl m-4">O Nosso Compromisso</h1>
-        <div className="text-justify px-4 lg:px-96 ">
+        <div className="text-justify px-4
+         lg:px-96 ">
           <p > Na KuXonga, acreditamos na moda que é acessível, sustentável e atemporal. Comprometemo-nos a trazer peças de qualidade que não apenas seguem as últimas tendências, mas também resistem ao teste do tempo. Trabalhamos incessantemente para garantir que cada peça reflete o padrão de excelência que você merece.</p> 
        </div>
       </div>
@@ -42,7 +43,7 @@ export const About = () => {
         <div className="grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           <img src="/2151238284.jpg" alt=""  className=" rounded-tl-2xl rounded-bl-2xl" />
           <img src="/front-view-black-woman-posing-outdoors.jpg" alt="" />
-          <img src="/portrait-young-handsome-male.jpg" className="rounded-tr-2xl rounded-br-2xl" alt="" />
+          <img src="/portrait-young-happy-man.jpg" className="rounded-tr-2xl rounded-br-2xl" alt="" />
         </div>
       </div>
 
