@@ -61,10 +61,10 @@ export const About = () => {
       </div>
 
       <div>
-        <div className=" relative before:absolute before:bg-black/45  before:w-full  before:h-[190px]  md:before:h-[324px]  lg:before:h-[594px]">
+      <div className=" relative before:absolute before:bg-black/45  before:w-full  before:h-[190px]  md:before:h-[324px]  lg:before:h-[594px] 2xl:before:h-[830px]">
         <img  className= "" src="/Cover-Website-2cover-2.jpg" alt="" />
-        <div  className=" text-center absolute top-4 md:top-10 lg:ml-56 lg:top-32 text-white">
-          <h2 className="font-bold text-xl md:text-5xl md:mb-5">Interessado nesta coleção de roupas</h2>
+        <div  className=" text-center absolute top-4 md:top-10 lg:ml-56 lg:top-32  2xl:ml-[540px] 2xl:top-52 text-white">
+          <h2 className="font-bold text-xl md:text-5xl md:mb-5 ">Interessado nesta coleção de roupas</h2>
           <p>Explore a KuXonga e descubra um mundo de moda que celebra a individualidade. </p>
           <p>Estamos aqui para ajudar você a contar a sua história, uma peça de roupa de cada vez.</p>
             <button className="bg-white text-black px-6  py-2 font-semibold  rounded-lg hover:bg-sky-blue-200 hover:duration-1000 hover:text-white   active:bg-sky-blue-100 md:my-6  ">Comprar</button>
