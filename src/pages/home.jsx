@@ -10,11 +10,8 @@ export const Home = () => {
     <>
       <Header />
       <Slider />
-<<<<<<< HEAD
       <ProdutosMaisVendidosdaSemana />
-=======
       <Categories />
->>>>>>> rascunho
       <ImageCard />
       <Footer />
     </>
