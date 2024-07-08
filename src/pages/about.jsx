@@ -15,7 +15,7 @@ export const About = () => {
 
   
 
-      <div className="flex flex-col gap-6 text-justify my-4 md:flex-row">
+      <div className="flex flex-col gap-6 text-justify my-4 md:flex-row mt-20">
         <div>
         <h1 className="font-bold text-2xl justify-between">O seu destino de moda onde a elegância encontra a modernidade</h1>
         </div>
@@ -27,16 +27,14 @@ export const About = () => {
   
 
       
-      <div className="bg-cream-100  pt-12">
+      <div className="bg-cream-100 pt-12 mt-20 ">
      
 
       <div className="text-center">
-        <h1 className="font-bold text-2xl ">O Nosso Compromisso</h1>
-        <p > Na KuXonga, acreditamos na moda que é acessível, </p>
-       <p >sustentável e atemporal. Comprometemo-nos a trazer peças de </p> 
-      <p> qualidade que não apenas seguem as últimas tendências, mas</p>
-      <p>também resistem ao teste do tempo. Trabalhamos</p>
-      <p>incessantemente para garantir que cada peça reflete o padrão de excelência que você merece</p> 
+        <h1 className="font-bold text-2xl m-4">O Nosso Compromisso</h1>
+        <div className="text-justify px-96">
+          <p > Na KuXonga, acreditamos na moda que é acessível, sustentável e atemporal. Comprometemo-nos a trazer peças de qualidade que não apenas seguem as últimas tendências, mas também resistem ao teste do tempo. Trabalhamos incessantemente para garantir que cada peça reflete o padrão de excelência que você merece.</p> 
+       </div>
       </div>
  
 
