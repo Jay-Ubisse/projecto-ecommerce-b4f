@@ -4,6 +4,7 @@ import { ProdutosMaisVendidosdaSemana } from "../components/produtos/produtosMai
 import { Slider } from "../components/slider/slider";
 import { Categories } from "../components/products-category/categories";
 import { ImageCard } from "../components/image-card/image-card";
+import { Featured } from "../components/Featured/featured";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <Categories />
       <ImageCard />
       <Footer />
+      <Featured/>
     </>
   );
 };
