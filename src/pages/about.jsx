@@ -6,10 +6,10 @@ export const About = () => {
       <Header />
       <main  className="px-10 mt-8">
 
-<div style={{ width: '100%', height: 'auto' }}>
+<div className="" style={{ width: '100%', height: 'auto' }}>
           <img src="public\2149241406.jpg" alt="" style={{ width: '100%', height: 'auto', borderRadius:"0 0 80px 80px"}} />
-          <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%, -50%)', padding: '10px', borderRadius: '5px' }}>
-            <h1 className="font-bold text-white text-7xl mt-80"  >Sobre Nós</h1>
+          <div  style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translate(-50%, -50%)', padding: '1px', borderRadius: '5px'  }}>
+          <h1 className="font-bold text-white text-4xl md:text- mt-4 md:mt-8 " >Sobre Nós</h1>
           </div>
         </div>
 
