@@ -1,6 +1,6 @@
-export const ImageCard = ({ title }) => {
+export const ImageCard = () => {
   return (
-    <div className="max-w-[600px] mx-auto my-8 rounded-xl overflow-hidden shadow-lg">
+    <div className="max-w-[600px] mx-auto my-8 rounded-xl overflow-hidden shadow-lg transition duration-300 transform hover:scale-110 cursor-pointer">
       <div className="relative">
         <img
           src="https://img.freepik.com/premium-vector/3d-megaphone-speaker-icon-colored-vector-megaphone-icon_1120327-5.jpg"

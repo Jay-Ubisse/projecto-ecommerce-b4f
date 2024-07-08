@@ -1,31 +1,63 @@
 export const Categories = () => {
-    return (
-      <div className="flex flex-col max-w-[1400px] m-auto">
-        <h1 className="m-auto font-bold py-4 ">COMPRE POR CATEGORIA</h1>
-       <div className="flex items-center gap-8 m-auto py-4 font-bold">
+  return (
+    <div className="flex flex-col max-w-[1400px] m-auto">
+      <h1 className="font-bold text-center text-2xl py-2 text-sky-blue-200">
+        COMPRE POR CATEGORIA
+      </h1>
+      <div className="flex items-center gap-8 m-auto py-4 font-bold">
         <div>
-        <img src="./assets/categoria-mulher.jpg" alt="" className="rounded-full w-60 h-60 py-2" />
-        <p className="ml-10">Roupa Para Mulher</p>
-        </div>
-        <div>
-        <img src="./assets/categoria-homens.jpg" alt="" className="rounded-full w-60 h-60 py-2" />
-        <p className="ml-10">Roupa Para Homem</p>
-        </div>
-        <div> 
-        <img src="./assets/categoria-bebes.jpg" alt="" className="rounded-full w-60 h-60 py-2"/>
-        <p className="ml-14">Bebés e Criança</p>
-        </div>
-        <div>
-        <img src="./assets/categoria-calcados.jpg" alt="" className="rounded-full w-60 h-60 py-2" />
-        <p className="ml-16">Calçados</p>
+          <img
+            src="./assets/categoria-mulher.jpg"
+            alt=""
+            className="rounded-full w-60 h-60 py-2 transition duration-300 transform hover:scale-110 cursor-pointer"
+          />
+          <p className="text-center hover:text-orange cursor-pointer font-bold">
+            Roupa Para Mulher
+          </p>
         </div>
         <div>
-        <img src="./assets/categoria-acessorios.jpg" alt="" className="rounded-full w-60 h-60 py-2" />
-        <p className="ml-16">Acessórios</p>
+          <img
+            src="./assets/categoria-homens.jpg"
+            alt=""
+            className="rounded-full w-60 h-60 py-2 transition duration-300 transform hover:scale-110 cursor-pointer"
+          />
+          <p className="text-center hover:text-orange cursor-pointer font-bold">
+            Roupa Para Homem
+          </p>
         </div>
+        <div>
+          <img
+            src="./assets/categoria-bebes.jpg"
+            alt=""
+            className="rounded-full w-60 h-60 py-2 transition duration-300 transform hover:scale-110 cursor-pointer"
+          />
+          <p className="text-center hover:text-orange cursor-pointer font-bold">
+            Bebés e Criança
+          </p>
+        </div>
+        <div>
+          <img
+            src="./assets/categoria-calcados.jpg"
+            alt=""
+            className="rounded-full w-60 h-60 py-2 transition duration-300 transform hover:scale-110 cursor-pointer"
+          />
+          <p className="text-center hover:text-orange cursor-pointer font-bold">
+            Calçados
+          </p>
+        </div>
+        <div>
+          <img
+            src="./assets/categoria-acessorios.jpg"
+            alt=""
+            className="rounded-full w-60 h-60 py-2 transition duration-300 transform hover:scale-110 cursor-pointer"
+          />
+          <p className="text-center hover:text-orange cursor-pointer font-bold">
+            Acessórios
+          </p>
         </div>
       </div>
-      /*
+    </div>
+    /*
        <div>
         <h3>COMPRA POR CATEGORIA</h3>
        </div>
@@ -36,7 +68,5 @@ export const Categories = () => {
        <img src="https://http2.mlstatic.com/sapato-social-masculino-couro-derby-oxford-brogue-bico-fino-D_NQ_NP_714343-MLB28582975758_112018-F.jpg" alt="" />
         </div>
         */
-      
-    );
-  };
-  
+  );
+};

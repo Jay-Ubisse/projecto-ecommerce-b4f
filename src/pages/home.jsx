@@ -11,11 +11,11 @@ export const Home = () => {
     <>
       <Header />
       <Slider />
+      <Featured />
       <ProdutosMaisVendidosdaSemana />
       <Categories />
       <ImageCard />
       <Footer />
-      <Featured/>
     </>
   );
 };
