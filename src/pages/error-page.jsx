@@ -19,7 +19,7 @@ export const ErrorPage = () => {
                 <div className="flex justify-center items-center">
                     <Link to="/">
                         {" "}
-                        <button className="text-white text-sm border-black border-spacing-4 shadow-lg rounded-2xl bg-black/70 w-40 h-10 hover:bg-sky-blue-200  hover:transition-all duration-500 ease-in-out hover:duration-200 hover:ease-in-out hover:w-44 mt-12 hover:mt-11 hover:shadow-2xl hover:rounded-3xl">
+                        <button className="text-white text-sm border-black border-spacing-4 shadow-lg rounded-2xl bg-black/70 w-40 h-10 hover:bg-sky-blue-200  hover:transition-all duration-500 ease-in-out hover:duration-200 hover:ease-in-out hover:w-44 mt-11 hover:mt-12 hover:shadow-2xl hover:rounded-3xl">
                         Back To Homepage
                         </button>
                     </Link>
