@@ -1,10 +1,13 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { Contact } from "./pages/contact";
 import { Products } from "./pages/products";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { FAQ } from "./pages/faq";
+
 import { ErrorPage } from "./pages/error-page";
+import { ProductDetails } from "./pages/product-details";
+
 
 export const route = createBrowserRouter([
   {
@@ -13,19 +16,24 @@ export const route = createBrowserRouter([
     errorElement:<ErrorPage/>
   },
   {
-    path: "contact",
+    path: "/contact",
     element: <Contact />,
   },
   {
-    path: "products",
+    path: "/products",
     element: <Products />,
   },
   {
-    path: "about",
+    path: "/about",
     element: <About />,
   },
   {
-    path: "faq",
+    path: "/faq",
     element: <FAQ />,
   },
+  {
+    path: "/products/:id",
+    element: <ProductDetails />,
+  },
+
 ]);
