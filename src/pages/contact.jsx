@@ -22,7 +22,7 @@ export const Contact = () => {
           <section className=" flex absolute">
           
           <section className="pt-11">
-          <div className="flex absolute justify-center max-w-flex justify-center w-full flex-col items-center">
+          <div className="flex absolute justify-center max-w-flex  w-full flex-col items-center">
           <h1 className="font-bold text-white text-2xl">Contactos</h1>
           <p className="font-normal inline-f text-white">
             Estamos aqui para ajudar você a encontrar seu estilo perfeito. Entre
