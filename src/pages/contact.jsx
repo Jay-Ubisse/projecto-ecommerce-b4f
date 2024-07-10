@@ -2,6 +2,7 @@ import { Header } from "../components/header";
 import { SocialMediaCard } from "../components/contact/socialmediacard";
 import { EmailCard } from "../components/emailCard";
 import { Card } from "../components/card-number";
+import { Footer } from "../components/footer";
 
 
 export const Contact = () => {
@@ -40,6 +41,7 @@ export const Contact = () => {
         </div>
         
       </main>
+      <Footer />
     </>
   );
 };
