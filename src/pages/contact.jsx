@@ -26,8 +26,8 @@ export const Contact = () => {
           <h1 className="font-bold text-white text-2xl">Contactos</h1>
           <p className="font-normal inline-f text-white">
             Estamos aqui para ajudar você a encontrar seu estilo perfeito. Entre
-            em contato conosco para qualquer dúvida, sugestão ou assistência.
-            Adoramos ouvir de nossos clientes!
+            em contato connosco para qualquer dúvida, sugestão ou assistência.
+            Adoramos ouvir dos nossos clientes!
           </p>
           </div>
         </section>
