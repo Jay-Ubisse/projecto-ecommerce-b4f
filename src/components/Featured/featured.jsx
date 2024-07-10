@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Slider from "react-slick";
+import { Minus } from "@phosphor-icons/react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -86,15 +87,17 @@ export const Featured = () => {
   return (
     <>
       <div className="bg-cream-200">
-        <h1 className="font-bold text-center text-2xl py-4 text-sky-blue-200">
+        <h1 className="font-bold text-center text-2xl pt-4 text-sky-blue-200">
           PRODUTOS DE DESTAQUE
         </h1>
-        <p className="text-center py-2 font-bold">
-          Compre as nossas mais recentes promoções em todas as lojas em
-          Mozambique.
+        <p>
+          <Minus size={32} className="m-auto text-sky-blue-200" />
+        </p>
+        <p className="text-center pb-4 font-light">
+          Confira as mais recentes tendências em todas as lojas de Moçambique!
         </p>
 
-        <div className="gap-4 py-4 max-w-[1200px] m-auto font-bold hover:text-orange">
+        <div className="gap-4 py-4 max-w-[1200px] m-auto hover:font-bold hover:text-orange">
           <Slider {...settings}>
             {showAll
               ? products.map((product, index) => (
@@ -104,8 +107,10 @@ export const Featured = () => {
                       src={product.image}
                       alt=""
                     />
-                    <p className="text-center">{product.name}</p>
-                    <p className="text-center">{product.price}</p>
+                    <p className="text-center mt-2">{product.name}</p>
+                    <p className="text-center pb-2 font-bold">
+                      {product.price}
+                    </p>
                   </div>
                 ))
               : products.slice(0, 3).map((product, index) => (
@@ -115,8 +120,10 @@ export const Featured = () => {
                       src={product.image}
                       alt=""
                     />
-                    <p className="text-center">{product.name}</p>
-                    <p className="text-center">{product.price}</p>
+                    <p className="text-center mt-2">{product.name}</p>
+                    <p className="text-center pb-2 font-bold">
+                      {product.price}
+                    </p>
                   </div>
                 ))}
           </Slider>
@@ -127,22 +134,20 @@ export const Featured = () => {
 };
 
 const NextArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "gray" }}
+      className={`${className} block fill-sky-blue-200 top-[50%]`}
       onClick={onClick}
     />
   );
 };
 
 const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
-      className={className}
-      style={{ ...style, display: "block", background: "gray" }}
+      className={`${className} block fill-sky-blue-200 top-[50%]`}
       onClick={onClick}
     />
   );
