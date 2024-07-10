@@ -4,16 +4,15 @@ import { Products } from "./pages/products";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { FAQ } from "./pages/faq";
-
 import { ErrorPage } from "./pages/error-page";
 import { ProductDetails } from "./pages/product-details";
-
+import { Authentication } from "./pages/auth";
 
 export const route = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement:<ErrorPage/>
+    errorElement: <ErrorPage />,
   },
   {
     path: "/contact",
@@ -35,5 +34,8 @@ export const route = createBrowserRouter([
     path: "/products/:id",
     element: <ProductDetails />,
   },
-
+  {
+    path: "/auth",
+    element: <Authentication />,
+  },
 ]);

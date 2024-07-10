@@ -1,5 +1,6 @@
 import { ShoppingBag, User } from "@phosphor-icons/react";
 import { NavBar } from "./nav-bar";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -7,9 +8,9 @@ export const Header = () => {
       <h1 className="text-2xl font-bold border border-white p-2">LOGO</h1>
       <section className="flex gap-5">
         <NavBar />
-        <div>
+        <Link to="/auth">
           <User size={24} weight="bold" />
-        </div>
+        </Link>
         <div>
           <ShoppingBag size={24} weight="bold" />
         </div>
