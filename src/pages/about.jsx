@@ -7,7 +7,7 @@ export const About = () => {
       <main  className="px-10 mt-8">
 
 <div className="w-full h-auto relative">
-          <img src="/2149241406.jpg" alt="" className="w-full h-auto rounded-b-3xl" />
+          <img src="/about.jpg" alt="" className="w-full h-auto rounded-b-3xl" />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white ">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold" >Sobre Nós</h1>
           </div>
@@ -41,9 +41,9 @@ export const About = () => {
 
       <div className="mt-20">
         <div className="grid grid-clos-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          <img src="/2151238284.jpg" alt=""  className=" rounded-tl-2xl rounded-bl-2xl" />
-          <img src="/front-view-black-woman-posing-outdoors.jpg" alt="" />
-          <img src="/portrait-young-happy-man.jpg" className="rounded-tr-2xl rounded-br-2xl" alt="" />
+          <img src="/person-1.jpg" alt=""  className=" rounded-tl-2xl rounded-bl-2xl" />
+          <img src="/person-2.jpg" alt="" />
+          <img src="/person-3.jpg" className="rounded-tr-2xl rounded-br-2xl" alt="" />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export const About = () => {
 
       <div>
       <div className=" relative before:absolute before:bg-black/45  before:w-full  before:h-[190px]  md:before:h-[324px]  lg:before:h-[594px] 2xl:before:h-[830px]">
-        <img  className= "" src="/Cover-Website-2cover-2.jpg" alt="" />
+        <img  className= "" src="/person-comprar.jpg" alt="" />
         <div  className=" text-center absolute top-4 md:top-10 lg:ml-56 lg:top-32  2xl:ml-[540px] 2xl:top-52 text-white">
           <h2 className="font-bold text-xl md:text-5xl md:mb-5 ">Interessado nesta coleção de roupas</h2>
           <p>Explore a KuXonga e descubra um mundo de moda que celebra a individualidade. </p>
