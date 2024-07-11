@@ -8,7 +8,7 @@ export const Header = () => {
       <h1 className="text-2xl font-bold border border-white p-2">LOGO</h1>
       <section className="flex gap-5">
         <NavBar />
-        <Link to="/auth">
+        <Link to="/sign-in">
           <User size={24} weight="bold" />
         </Link>
         <div>
