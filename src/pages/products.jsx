@@ -1,20 +1,16 @@
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
-<<<<<<< HEAD
+
 import { ProductCard } from "../components/product-card";
 import { products } from "../data/products";
 
-=======
->>>>>>> 8fb0a492dedd47bbf008d1fbc988aa19e113275e
+
 export const Products = () => {
   return (
     <div>
       <Header />
-<<<<<<< HEAD
-      <section
-        className="min-h-[calc(100vh-100px)] flex justify-between
-      "
-      >
+
+      <section className="min-h-[calc(100vh-100px)] flex justify-between">
         <main className="w-[78%] p-4">
           <h1 className="font-semibold text-sky-blue-200 text-3xl">
             Todos os produtos
@@ -34,6 +30,7 @@ export const Products = () => {
               );
             })}
           </section>
+
         </main>
         <aside className="w-[18%] bg-slate-100">
           <h2>Filtrar Por</h2>
@@ -41,10 +38,9 @@ export const Products = () => {
       </section>
       <Footer />
     </div>
-=======
-      <main>Página dos produtos</main>
-      <Footer />
-    </>
->>>>>>> 8fb0a492dedd47bbf008d1fbc988aa19e113275e
+
+     
+
+
   );
 };
