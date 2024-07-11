@@ -13,6 +13,14 @@ export default {
         white: "#FFFFFF",
       },
     },
+<<<<<<< HEAD
+=======
+    extend: {
+      backgroundImage: {
+        'gradient-7': 'linear-gradient(sky-blue-200,sky-blue-100,cream-100,cream-200,orange,black,white)',
+      },
+    },
+>>>>>>> 8fb0a492dedd47bbf008d1fbc988aa19e113275e
   },
   plugins: [],
 };
