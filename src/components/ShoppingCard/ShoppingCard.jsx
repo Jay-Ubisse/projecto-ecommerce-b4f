@@ -1,6 +1,7 @@
 import { LockKey, X } from "@phosphor-icons/react";
-import { useState,useContext } from "react";
+import { useState,useContext, useEffect } from "react";
 import { CardShoppingContext } from "../../contexts/CardShoppingContext";
+
 
 export const ShoppingCard = ({ open, onClose }) => {
 
@@ -8,10 +9,23 @@ export const ShoppingCard = ({ open, onClose }) => {
 
   const subtotal=priceProduct*quantityProduct,taxaDeEntrega = 200,total =subtotal+taxaDeEntrega
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+   
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [open]);
+
 
   return (
-    <div className={`bg-black/45 bg-cover absolute z-10 h-screen w-screen mt-[830px] ${open ? "block" : "hidden"} transition-transform`}>
-      <div className="flex flex-col gap-2 p-2 bg-white text-black w-[22%] 2xl:2xl:h-screen 2xl:ml-[1497px]">
+    <div className={`bg-black/45 bg-cover absolute z-10 h-screen w-screen mt-[830px] ${open ? "block" : "hidden"}`}>
+      <div className="flex flex-col gap-2 p-2 bg-white text-black w-[22%] 2xl:2xl:h-screen 2xl:ml-[1496px]">
         <div className="flex justify-between gap-44 items-center">
           <h1 className="font-bold text-xl">A minha carrinha</h1>
     
