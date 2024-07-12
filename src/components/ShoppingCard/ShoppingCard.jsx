@@ -24,7 +24,8 @@ export const ShoppingCard = ({ open, onClose }) => {
 
 
   return (
-    <div className={`bg-black/45 bg-cover absolute z-10 h-screen w-screen mt-[830px] ${open ? "block" : "hidden"}`}>
+    <div className={`bg-black/45 absolute z-10 top-0 left-0  w-full h-full transition-opacity duration-700 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+      
       <div className="flex flex-col gap-2 p-2 bg-white text-black w-[22%] 2xl:2xl:h-screen 2xl:ml-[1496px]">
         <div className="flex justify-between gap-44 items-center">
           <h1 className="font-bold text-xl">A minha carrinha</h1>
