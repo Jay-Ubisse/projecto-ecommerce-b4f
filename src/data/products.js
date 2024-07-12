@@ -8,7 +8,7 @@ export const products = [
     price: 723.99,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
-    quantityInStock: 40,
+    quantityInStock: 5,
     imageUrl: "/portrait-young-happy-man.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),

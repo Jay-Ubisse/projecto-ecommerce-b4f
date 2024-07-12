@@ -6,7 +6,7 @@ import { CardShoppingContext } from "../../contexts/CardShoppingContext";
 
 
 
-export const ProductCard = ({ id, name, category, price, imageUrl }) => {
+export const ProductCard = ({ id, name, category, price, imageUrl,stock }) => {
   const [quantity, setQuantity] = useState(1);
 
 
@@ -22,14 +22,13 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
     setTimeout(() => {
        setPoupUp(!popUp)
     }, 1000);
-  
-     
- 
 
   }
  const increment = () => {
-
-     setQuantity(quantity +1)
+    if(quantity<stock){
+        setQuantity(quantity +1)
+    }
+   
 
  }
  const decrement = () => {
@@ -40,9 +39,7 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
 
   return (
 
-
-
-<div className="bg-slate-200 shadow-sm hover:shadow-xl w-[220px] h-[400px] rounded-md p-2">
+<div className="bg-slate-200 shadow-sm hover:shadow-xl  w-[220px] h-[400px] rounded-md p-2">
       <figure className="bg-white h-2/5 rounded-md flex justify-center items-center overflow-hidden">
         <img src={imageUrl} alt="Imagem do produto" className="w-full h-full" />
       </figure>
@@ -51,6 +48,8 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
       <p className="text-center font-medium mb-2 text-base">
         {price.toFixed(2)} MT
       </p>
+   
+      
       <div className="flex items-center justify-center mt-5 mb-7 border border-sky-blue-200 w-fit mx-auto rounded-md">
         <span className="px-2 hover:cursor-pointer">
           <Minus className="cursor-pointer" onClick={decrement}/>

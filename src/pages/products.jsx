@@ -43,6 +43,7 @@ const {popUp}  = useContext(CardShoppingContext)
                   category={product.category}
                   price={product.price}
                   imageUrl={product.imageUrl}
+                  stock = {product.quantityInStock}
                 />
               );
             })}

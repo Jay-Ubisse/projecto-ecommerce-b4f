@@ -9,7 +9,7 @@ export const App = () => {
     const [nameProduct,setNameProduct]   = useState("")
     const [priceProduct,setPriceProduct]   = useState(0)
     const [quantityProduct,setQuantityProduct]   = useState(0)
-    const [popUp,setPoupUp]= useState(true)
+    const [popUp,setPoupUp]= useState(false)
   return (
 
   
