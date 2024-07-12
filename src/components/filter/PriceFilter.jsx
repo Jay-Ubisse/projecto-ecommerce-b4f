@@ -14,29 +14,33 @@ const PriceFilter = () => {
   }
 
   return (
-    <fieldset className="flex mt-4 justify-center">
-      <label className="m-1">Preço</label>
+    <fieldset className="flex mt-4 ">
+      <label className="m-1 mt-0 ml-0 text-sm">Preço</label>
       <input
         type="text"
-        className="w-14 border h-6 rounded-xl text-center hover:w-16 transition-all duration-300 ease-in-out"
-        placeholder="Mínimo"
+        className="w-10 border h-6 rounded-xl text-center hover:w-12 transition-all duration-300 ease-in-out"
+        placeholder="Min"
         value={minPrice}
         onChange={(e) => setMinPrice(e.target.value)}
       />
       <label htmlFor="">≈</label>
       <input
         type="text"
-        className="w-14 border h-6 rounded-xl text-center hover:w-16 transition-all duration-300 ease-in-out"
-        placeholder="Máximo"
+        className="w-10 border h-6 rounded-xl text-center hover:w-12 transition-all duration-300 ease-in-out "
+        placeholder="Max"
         value={maxPrice}
         onChange={(e) => setMaxPrice(e.target.value)}
       />
+      <div className="">
+
       <button
-        className="ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="ml-2 mr-1 bg-blue-500 flex relative justify-center items-center  hover:bg-blue-700 text-white hover:font-bold py-2 px-4 rounded-lg w-12 h-6 text-xs transition-all duration-300 ease-in-out"
         onClick={handleApplyFilter}
       >
         Aplicar
       </button>
+
+      </div>
     </fieldset>
   );
 };

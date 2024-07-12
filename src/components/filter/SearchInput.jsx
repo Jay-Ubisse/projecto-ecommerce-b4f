@@ -17,7 +17,7 @@ const SearchInput = () => {
 
         <input 
             type="search" name="search"  
-            placeholder="Procurar pelo produto"   
+            placeholder="    Procurar pelo produto"   
             onChange={handleSearch}
             className=" border border-black/50 rounded-lg text-center text-base 
               hover:border-none w-24 hover:w-full transition-all 
