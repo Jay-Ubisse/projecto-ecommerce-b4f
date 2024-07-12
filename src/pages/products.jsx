@@ -1,12 +1,29 @@
+import { useContext, useState } from "react";
+
+
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { ProductCard } from "../components/product-card";
 import { products } from "../data/products";
+import { CardShoppingContext } from "../contexts/CardShoppingContext";
+import { CheckCircle } from "@phosphor-icons/react";
+
+
+
 
 export const Products = () => {
+const {popUp}  = useContext(CardShoppingContext)
+
   return (
     <div>
       <Header />
+
+      <div className={`text-center bg-white shadow-md rounded-md w-fit p-3 m-auto absolute lg:left-[35rem] ${popUp?"block":"hidden"}`}>
+        <div className="flex justify-center items-center">
+          <CheckCircle size={24} fill="green" className="text-white"/>
+          <p>Produto adicionado</p>
+        </div>
+      </div>
       <section
         className="min-h-[calc(100vh-100px)] flex justify-between
       "

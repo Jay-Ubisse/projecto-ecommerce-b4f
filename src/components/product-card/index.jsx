@@ -1,11 +1,36 @@
 import { Link } from "react-router-dom";
 import { Minus, Plus } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CardShoppingContext } from "../../contexts/CardShoppingContext";
+
+
+
 
 export const ProductCard = ({ id, name, category, price, imageUrl }) => {
   const [quantity, setQuantity] = useState(1);
+
+
+      const {setNameProduct,setPriceProduct,setQuantityProduct,popUp,setPoupUp}  = useContext(CardShoppingContext)
+      
+
+  function handelCard (){
+
+    setPoupUp(!popUp)
+    setNameProduct(name)
+    setPriceProduct(price)
+    setQuantityProduct(quantity)
+    setTimeout(() => {
+       setPoupUp(!popUp)
+    }, 1000);
+  
+     
+ 
+
+  }
  const increment = () => {
-  setQuantity(quantity +1)
+
+     setQuantity(quantity +1)
+
  }
  const decrement = () => {
   if (quantity > 0){
@@ -14,7 +39,10 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
  }
 
   return (
-    <div className="bg-slate-200 shadow-sm hover:shadow-xl w-[220px] h-[400px] rounded-md p-2">
+
+
+
+<div className="bg-slate-200 shadow-sm hover:shadow-xl w-[220px] h-[400px] rounded-md p-2">
       <figure className="bg-white h-2/5 rounded-md flex justify-center items-center overflow-hidden">
         <img src={imageUrl} alt="Imagem do produto" className="w-full h-full" />
       </figure>
@@ -33,7 +61,7 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
         </span>
       </div>
       <div className="flex flex-col gap-2 items-center">
-        <button className="bg-sky-blue-200 text-white font-medium text-sm px-2 py-1 rounded-md hover:bg-sky-blue-200/90">
+        <button  onClick={handelCard}className="bg-sky-blue-200 text-white font-medium text-sm px-2 py-1 rounded-md hover:bg-sky-blue-200/90">
           Adicionar a carinha
         </button>
         <Link
@@ -44,5 +72,7 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
         </Link>
       </div>
     </div>
+
+   
   );
 };

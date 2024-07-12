@@ -1,10 +1,15 @@
 import { ShoppingBag, User } from "@phosphor-icons/react";
+import {  useContext, useState } from "react";
+
 import { NavBar } from "./nav-bar";
 import { ShoppingCard } from "../ShoppingCard/ShoppingCard";
-import { useState } from "react";
+
+
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+
 
   const handleShoppingBagClick = () => {
     setIsOpen(!isOpen);
@@ -21,7 +26,7 @@ export const Header = () => {
         <div className="flex justify-center cursor-pointer hover:text-red-500 items-center gap-1">
          
           <ShoppingBag size={24} weight="bold" onClick={handleShoppingBagClick} />
-          <span className="">0</span>
+          <span className="text-red-500 text-sm absolute top-5 font-medium right-9">0</span>
         </div>
       </section>
 

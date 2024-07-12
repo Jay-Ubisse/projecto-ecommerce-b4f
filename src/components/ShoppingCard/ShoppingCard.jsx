@@ -1,7 +1,12 @@
 import { LockKey, X } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useState,useContext } from "react";
+import { CardShoppingContext } from "../../contexts/CardShoppingContext";
 
 export const ShoppingCard = ({ open, onClose }) => {
+
+  const {nameProduct,setNameProduct,priceProduct,setPriceProduct,quantityProduct,setQuantityProduct}  = useContext(CardShoppingContext)
+
+  const subtotal=priceProduct*quantityProduct,taxaDeEntrega = 200,total =subtotal+taxaDeEntrega
 
 
   return (
@@ -12,20 +17,38 @@ export const ShoppingCard = ({ open, onClose }) => {
     
           <X size={20} onClick={onClose} className="cursor-pointer active:border-2 border-black p-1 active:rounded-md" />
         </div>
-
-        <p className="text-zinc-400">A sua carrinha está vazia. Adicione produtos à carrinha.</p>
+      <div>
+            {(priceProduct&&nameProduct&&quantityProduct) ? (
+            <div>
+            <div className="flex justify-between">
+              <p>Nome</p>
+              <p className="text-zinc-400">{nameProduct}</p>
+            </div>
+            <div className="flex justify-between">
+              <p>preco</p>
+              <p className="text-zinc-400">{priceProduct}</p>
+            </div>
+            <div className="flex justify-between">
+              <p>Quantidade</p>
+              <p className="text-zinc-400">{quantityProduct}</p>
+            </div>
+          </div>
+          ) : (
+            <p className="text-zinc-400">Sua carinha esta vazia</p>
+          )}
+       </div> 
         <div className="border-t-2 border-b-2 pt-2 pb-2">
           <div className="flex justify-between">
             <span>Subtotal</span>
-            <span>0 MT</span>
+            <span>{subtotal.toFixed(2)} MT</span>
           </div>
           <div className="flex justify-between">
             <span>Taxa de entrega</span>
-            <span>0 MT</span>
+            <span>{taxaDeEntrega} MT</span>
           </div>
           <div className="flex justify-between font-semibold">
             <span>Total</span>
-            <span>0 MT</span>
+            <span>{total.toFixed(2)} MT</span>
           </div>
         </div>
         <button className="bg-sky-blue-200 rounded-md text-white font-semibold hover:bg-sky-blue-100 hover:text-black cursor-pointer hover:duration-700">Checkout</button>
