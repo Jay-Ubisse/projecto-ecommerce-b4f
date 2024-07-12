@@ -26,7 +26,7 @@ export const ShoppingCard = ({ open, onClose }) => {
   return (
     <div className={`bg-black/45 absolute z-10 top-0 left-0  w-full h-full transition-opacity duration-700 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
       
-      <div className="flex flex-col gap-2 p-2 bg-white text-black w-[22%] 2xl:2xl:h-screen 2xl:ml-[1496px]">
+      <div className="flex flex-col gap-2 p-4 bg-white text-black w-[29%] ml-[61rem] h-screen 2xl:w-[22%] 2xl:2xl:h-screen 2xl:ml-[1496px]">
         <div className="flex justify-between gap-44 items-center">
           <h1 className="font-bold text-xl">A minha carrinha</h1>
     
@@ -55,15 +55,15 @@ export const ShoppingCard = ({ open, onClose }) => {
         <div className="border-t-2 border-b-2 pt-2 pb-2">
           <div className="flex justify-between">
             <span>Subtotal</span>
-            <span>{subtotal.toFixed(2)} MT</span>
+            <span>{subtotal} MT</span>
           </div>
           <div className="flex justify-between">
             <span>Taxa de entrega</span>
-            <span>{taxaDeEntrega} MT</span>
+            <span>{!priceProduct?'0':taxaDeEntrega.toFixed(2)} MT</span>
           </div>
           <div className="flex justify-between font-semibold">
             <span>Total</span>
-            <span>{total.toFixed(2)} MT</span>
+            <span>{!priceProduct?'0':total.toFixed(2)}MT</span>
           </div>
         </div>
         <button className="bg-sky-blue-200 rounded-md text-white font-semibold hover:bg-sky-blue-100 hover:text-black cursor-pointer hover:duration-700">Checkout</button>
