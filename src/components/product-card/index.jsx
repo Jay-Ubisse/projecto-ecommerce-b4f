@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import { Minus, Plus } from "@phosphor-icons/react";
+import { useState } from "react";
 
 export const ProductCard = ({ id, name, category, price, imageUrl }) => {
+  const [quantity, setQuantity] = useState(1);
+ const increment = () => {
+  setQuantity(quantity +1)
+ }
+ const decrement = () => {
+  if (quantity > 0){
+    setQuantity(quantity -1)
+  }
+ }
+
   return (
     <div className="bg-slate-200 shadow-sm hover:shadow-xl w-[220px] h-[400px] rounded-md p-2">
       <figure className="bg-white h-2/5 rounded-md flex justify-center items-center overflow-hidden">
@@ -14,11 +25,11 @@ export const ProductCard = ({ id, name, category, price, imageUrl }) => {
       </p>
       <div className="flex items-center justify-center mt-5 mb-7 border border-sky-blue-200 w-fit mx-auto rounded-md">
         <span className="px-2 hover:cursor-pointer">
-          <Minus />
+          <Minus className="cursor-pointer" onClick={decrement}/>
         </span>
-        <input type="number" className="w-10 text-center" min={1} value={1} />
+       <p className="w-10 text-center bg-white"> {quantity}</p>
         <span className="px-2 hover:cursor-pointer">
-          <Plus />
+          <Plus className="cursor-pointer" onClick={increment}/>
         </span>
       </div>
       <div className="flex flex-col gap-2 items-center">

@@ -9,13 +9,18 @@ import { Featured } from "../components/Featured/featured";
 export const Home = () => {
   return (
     <>
-      <Header />
+
+
+<Header />
       <Slider />
       <Featured />
       <ProdutosMaisVendidosdaSemana />
       <Categories />
       <ImageCard />
       <Footer />
+
+
+      
     </>
   );
 };

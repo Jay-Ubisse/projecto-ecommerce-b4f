@@ -1,6 +1,10 @@
 import { ShoppingBag, User } from "@phosphor-icons/react";
 import { NavBar } from "./nav-bar";
+
 import { Link } from "react-router-dom";
+
+import { ShoppingCard } from "../ShoppingCard/ShoppingCard";
+
 
 export const Header = () => {
   return (
@@ -14,7 +18,9 @@ export const Header = () => {
         <div>
           <ShoppingBag size={24} weight="bold" />
         </div>
+        
       </section>
+     <ShoppingCard/>
     </header>
   );
 };
