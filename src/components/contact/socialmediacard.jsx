@@ -5,7 +5,7 @@ import { TiktokLogo } from "@phosphor-icons/react";
 
 export const SocialMediaCard = () => {
   return (
-    <div className="bg-black bg-opacity-87 text-white p-2 text-center space-y-3 h-15 max-w-sm mx-auto shadow-2xl rounded-3xl ">
+    <div className="bg-white bg-opacity-87 text-sky-blue-200 p-2 text-center space-y-3 h-15 w-64 shadow-2xl rounded-3xl">
       <h2 className="font-bold">Contacte-nos</h2>
       <div>
         <div>

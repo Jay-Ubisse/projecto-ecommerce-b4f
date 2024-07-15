@@ -1,5 +1,9 @@
 import { Header } from "../components/header";
+
 import { FaqComponents } from "../components/faq";
+
+import { Footer } from "../components/footer";
+
 
 export const FAQ = () => {
   const questionsAnswers = [
@@ -45,6 +49,7 @@ export const FAQ = () => {
   return (
     <>
       <Header />
+
       <main >
         <div  className="mt-20">
           <h1 className="flex justify-center font-bold text-2xl w-full text-sky-blue-200  ">Perguntas Mais Frequentes</h1>
@@ -96,6 +101,11 @@ export const FAQ = () => {
           </a>
         </div>
       </main> */}
+
+      <main>Perguntas frequentes</main>
+      <Footer />
+
     </>
+    
   );
 };
