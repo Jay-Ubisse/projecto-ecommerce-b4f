@@ -9,7 +9,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 40,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -21,7 +21,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 140,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -33,7 +33,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 56,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -45,7 +45,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 56,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -57,7 +57,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 40,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -69,7 +69,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 140,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -81,7 +81,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 56,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
@@ -93,7 +93,7 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloremque minus similique illum saepe perferendis hic magni. Commodi cumque culpa tenetur et, neque voluptate quidem beatae laborum ab est dolores?",
     quantityInStock: 56,
-    imageUrl: "/portrait-young-happy-man.jpg",
+    imageUrl: "/person-3.jpg",
     createdAt: date.getFullYear(),
     updatedAt: date.getFullYear(),
   },
