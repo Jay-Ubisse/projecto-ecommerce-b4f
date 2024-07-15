@@ -1,15 +1,20 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { Contact } from "./pages/contact";
 import { Products } from "./pages/products";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { FAQ } from "./pages/faq";
+import { ErrorPage } from "./pages/error-page";
 import { ProductDetails } from "./pages/product-details";
+import { SignIn } from "./components/user-auth/sign-in";
+import { SignUp } from "./components/user-auth/sign-up";
+import { PasswordReset } from "./components/user-auth/password-reset";
 
 export const route = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/contact",
@@ -30,5 +35,17 @@ export const route = createBrowserRouter([
   {
     path: "/products/:id",
     element: <ProductDetails />,
+  },
+  {
+    path: "/sign-in",
+    element: <SignIn />,
+  },
+  {
+    path: "/sign-up",
+    element: <SignUp />,
+  },
+  {
+    path: "/password-reset",
+    element: <PasswordReset />,
   },
 ]);

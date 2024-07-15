@@ -1,39 +1,56 @@
 import { Header } from "../components/header";
+
 import { FaqComponents } from "../components/faq";
 
+import { Footer } from "../components/footer";
+
+
 export const FAQ = () => {
-  const faq = [
+  const questionsAnswers = [
     {
       pergunta: "Como faço para realizar uma compra?",
-      resposta:
-        "Para fazer uma compra, basta navegar até o produto desejado, selecionar a quantidade e clicar no botão 'Comprar'. Em seguida, siga as instruções para finalizar o pedido.",
+      resposta: "Para fazer uma compra, basta navegar até o produto desejado, selecionar a quantidade e clicar no botão 'Comprar'. Em seguida, siga as instruções para finalizar o pedido."
     },
     {
       pergunta: "Quais são as opções de pagamento disponíveis?",
-      resposta:
-        "Aceitamos cartões de crédito (Visa, MasterCard, American Express), boleto bancário e transferência bancária como formas de pagamento.",
+      resposta: "Aceitamos cartões de crédito (Visa, MasterCard, American Express), boleto bancário e transferência bancária como formas de pagamento."
     },
     {
       pergunta: "Como posso rastrear meu pedido?",
-      resposta:
-        "Assim que seu pedido for enviado, você receberá um e-mail com o número de rastreamento. Você pode usar esse número no site da transportadora para acompanhar a entrega.",
+      resposta: "Assim que seu pedido for enviado, você receberá um e-mail com o número de rastreamento. Você pode usar esse número no site da transportadora para acompanhar a entrega."
     },
     {
       pergunta: "Qual é a política de devolução da loja?",
-      resposta:
-        "Aceitamos devoluções dentro de 30 dias após a compra, desde que o produto esteja em condições adequadas e com a embalagem original.",
+      resposta: "Aceitamos devoluções dentro de 30 dias após a compra, desde que o produto esteja em condições adequadas e com a embalagem original."
     },
+    
   ];
+
+
   return (
     <>
       <Header />
-      <main>
+
+      <main >
+        <div  className="mt-20">
+          <h1 className="flex justify-center font-bold text-2xl w-full text-sky-blue-200  ">Perguntas Mais Frequentes</h1>
+          <div className="px-[250px]  mt-16 ">    
+          {questionsAnswers.map(questionAnswer => <FaqComponents className="flex justify-center " question={questionAnswer.pergunta} answer={questionAnswer.resposta} />)}
+        </div>
+        </div>
+        <div className="flex justify-center items-center h-80  ">
+          <img src="https://blogdodia.com.br/wp-content/uploads/2018/03/courier-signing-document-H6YTX37-min-1-1568x1046.jpg" alt="Imagem 1" className="w-80 rounded-lg hover:w-96 transition-all duration-500 ease-in-out"  />
+        <img src="https://www.completecontroller.com/wp-content/uploads/Business-During-the-Summer-Complete-Controller.jpg" alt="Imagem 2"  className="w-80 rounded-md ml-4 hover:w-96 transition-all duration-500 ease-in-out" />
+      <img src="https://th.bing.com/th/id/R.9afdfb0eb36bcadb8f485875dcb9d718?rik=NlnJ37SL7NokzA&pid=ImgRaw&r=0" alt="Imagem 3" className="w-80 rounded-md ml-4 hover:w-96 transition-all duration-500 ease-in-out " />
+      </div>
+      </main>
+      {/* <main>
         <div className="mt-20">
           <h1 className="flex justify-center font-bold text-2xl w-full text-sky-blue-200  ">
             Perguntas Mais Frequentes
           </h1>
           <div className="px-[250px]  mt-16 ">
-            {faq.map((e) => (
+            {questionsAnswers.map((e) => (
               <FaqComponents
                 className="flex justify-center "
                 pergunta={e.pergunta}
@@ -64,7 +81,12 @@ export const FAQ = () => {
             <img src="" alt="" />
           </a>
         </div>
-      </main>
+      </main> */}
+
+      <main>Perguntas frequentes</main>
+      <Footer />
+
     </>
+    
   );
 };

@@ -1,10 +1,12 @@
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
+
 import { ProductCard } from "../components/product-card";
 import { products } from "../data/products";
 import Filter from "../components/filter/Index";
 import { useContext, useState, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
+
 
 export const Products = () => {
   const { brandFilter, priceFilter, genderFilter, searchValue, sizeFilter, category } =
@@ -71,6 +73,7 @@ export const Products = () => {
               />
             ))}
           </section>
+
         </main>
         <aside className="w-[18%] p-3 bg-slate-100">
           <Filter />
@@ -78,5 +81,9 @@ export const Products = () => {
       </section>
       <Footer />
     </div>
+
+     
+
+
   );
 };

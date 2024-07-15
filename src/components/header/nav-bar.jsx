@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const activeStyles = "text-red-500";
+const activeStyles = "text-black";
 const inactiveStyles = "text-white";
 export const NavBar = () => {
   return (
